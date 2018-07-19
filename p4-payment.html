@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validation-Payment Method</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul class="progress clearfix">
+                <li class="finshPage"></li>
+                <li class="finshline"></li>
+                <li class="finshPage"></li>
+                <li class="finshline"></li>
+                <li class="finshPage"></li>
+                <li class="finshline"></li>
+                <li class="now"></li>
+            </ul>
+        </div>
+        <div class="container">
+            <form id="payment" name="payment" action="" method="post" onclick="return false">
+                <h1>Payment Method</h1>
+                <h2>Add your credit card information!</h2>
+                <label for="card-number">Card Number</label>
+                <ul class="card clearfix">
+                    <li class="card-number">
+                        <input type="number" name="card-number" class="number">
+                    </li>
+                    <li class="hr">
+                        -
+                    </li>
+                    <li class="card-number">
+                        <input type="password" name="card-number" class="number">
+                    </li>
+                    <li class="hr">
+                        -
+                    </li>
+                    <li class="card-number">
+                        <input type="password" name="card-number" class="number">
+                    </li>
+                    <li class="hr">
+                        -
+                    </li>
+                    <li class="card-number">
+                        <input type="number" name="card-number" class="number">
+                    </li>
+                    <li class="organize far fa-credit-card">
+                    </li>
+                </ul>
+                <div class="expire-date clearfix">
+                <label for="expire-date">Expire Date</label>
+                <select name="Month" class="expire-date-m ">
+                    <option value="">-MM-</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="Year" class="expire-date-y ">
+                    <option value=" ">-YY-</option>
+                    <option value="2018">18</option>
+                    <option value="2019">19</option>
+                    <option value="2020">20</option>
+                    <option value="2021">21</option>
+                    <option value="2022">22</option>
+                    <option value="2023">23</option>
+                    <option value="2024">24</option>
+                    <option value="2025">25</option>
+                </select>
+                </div>
+                <label for="card-cvv">CVV*</label>
+                <input type="number" name="card-cvv" class="card-cvv" placeholder="CVV">
+                <input type="submit" class="submit " name="submit " value="Submit & Next" onclick="javascript:location.href='p5-congratulations.html'">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+//color
+$success-color:#0275D8;
+$fail-color:#BEE1FF;
+$warning-color:#F5A623;
+$heavy-color:#000;
+$light-color:#FFF;
+$mid-color:#9B9B9B;
+
+//font
+@mixin title-font{
+    font-family: arial;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+}
+
+@mixin subtitle-font{
+    font-family: arial;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+@mixin form-font{
+     font-family:arial;
+    font-size: 20px;
+    color: #000000;
+    line-height: 24px;
+    text-align: left;
+}
+
+@mixin label-font{
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+}

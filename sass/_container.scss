@@ -1,0 +1,185 @@
+.container {
+    width: 456px;
+    height: 500px;
+    background: $light-color;
+    margin: 0 auto;
+    h1 {
+        @include title-font;
+    }
+    h2 {
+        @include subtitle-font;
+    }
+    label {
+        @include form-font;
+        display: block;
+        width: 100%;
+        margin-top: 24px;
+    }
+    .input,
+    .submit,
+    .card-cvv {
+        @include form-font;
+        display: block;
+        width: 100%;
+        height: 52px;
+        padding: 12px 20px;
+        border: 2px solid $heavy-color;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        margin-top: 8px;
+        outline: none;
+    }
+    .birth-y,
+    .birth-m,
+    .birth-d {
+        @include form-font;
+        display: block;
+        float: left;
+        width: 30%;
+        height: 52px;
+        padding: 12px 20px;
+        border: 2px solid $heavy-color;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        margin-top: 8px;
+        outline: none;
+    }
+    .birth-y,
+    .birth-m {
+        margin-right: 5%;
+    }
+    ul.card {
+        width: 100%;
+        li.hr {
+            display: block;
+            float: left;
+            width: 4%;
+            height: 52px;
+            margin-top: 8px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 52px;
+            color: $heavy-color;
+        }
+        li.card-number {
+            display: block;
+            float: left;
+            width: 20%;
+            height: 52px;
+            .number {
+                @include form-font;
+                width: 100%;
+                height: 52px;
+                padding: 12px 20px;
+                border: 2px solid $heavy-color;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                margin-top: 8px;
+                outline: none;
+            }
+        }
+        li.organize {
+            width: 8%;
+            height: 52px;
+            display: block;
+            float: left;
+            font-size: 20px;
+            line-height: 52px;
+            margin-top: 8px;
+            text-align: center;
+            color: $mid-color;
+        }
+    }
+    .expire-date-m,
+    .expire-date-y {
+        @include form-font;
+        display: block;
+        float: left;
+        width: 48%;
+        height: 52px;
+        padding: 12px 20px;
+        border: 2px solid $heavy-color;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        margin-top: 8px;
+        outline: none;
+    }
+    .expire-date-m {
+        margin-right: 4%;
+    }
+
+    .submit {
+        text-align: center;
+        background: $fail-color;
+        color: $light-color;
+        border: none;
+        margin-top: 40px;
+    }
+
+    .submit:active,
+    .submit .active {
+        background: $success-color;
+    }
+
+    .update-photo {
+        display: block;
+        width: 100%;
+        height: 142px;
+        border: 2px solid $mid-color;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        margin-top: 40px;
+        background: $light-color;
+        color: $mid-color;
+        .img-icon {
+            display: block;
+            float: left;
+            font-size: 46px;
+            margin: 48px 8px 0 68px;
+        }
+
+        .description {
+            display: block;
+            float: left;
+            margin-top: 48px;
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .update-photo:hover,
+    .update-photo:active {
+      border: 3px dotted $mid-color;
+    }
+    .congratulation {
+        width: 100%;
+        height: 230px;
+        margin: 24px auto 0 auto;
+        p {
+            font-family: Roboto;
+            font-style: italic;
+            font-size: 20px;
+            color: $success-color;
+            text-align: center;
+            line-height: 25px;
+            margin-top: 40px;
+            ;
+        }
+        .smile {
+            width: 100%;
+            font-size: 230px;
+            text-align: center;
+            color: $fail-color;
+        }
+    }
+}

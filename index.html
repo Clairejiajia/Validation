@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation-Create Account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header ">
+            <ul class="progress clearfix">
+                <li class="now"></li>
+                <li class="line"></li>
+                <li class="otherPage"></li>
+                <li class="line"></li>
+                <li class="otherPage"></li>
+                <li class="line"></li>
+                <li class="otherPage"></li>
+            </ul>
+        </div>
+        <div class="container">
+            <form id="create-account" name="create-account" action="" method="post" onclick="return false">
+                <h1>Create Account</h1>
+                <h2>Glad to see you here!</h2>
+                <label for="account ">Account</label>
+                <input class="input" type="email" id="account" name="account" placeholder="example@email.com ">
+                <label for="password">Password</label>
+                <input class="input" type="password" id="password" name="password" placeholder="Password">
+                <label for="comfirm-password ">Comfirm Password</label>
+                <input class="input" type="password" id="comfirm-password" name="comfirm-password"  placeholder="Comfirm Password">
+                <input type="submit" class="submit " name="submit " value="Submit & Next" onclick="javascript:location.href='p2_general_info.html'" >
+            
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

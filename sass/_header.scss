@@ -1,0 +1,52 @@
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: $light-color;
+    .header {
+        width: 456px;
+        margin: 0 auto;
+        border-top: 3px solid $success-color;
+        .progress {
+            width: 300px;
+            margin: 40px auto;
+        }
+        .now,
+        .otherPage,
+        .finshPage {
+            display: block;
+            float: left;
+            background: $light-color;
+            font-size: 16px;
+            height: 16px;
+            z-index: 30;
+        }
+        .now {
+            color: $success-color;
+            font-weight: 900;
+        }
+        .otherPage {
+            color: $fail-color;
+        }
+        .finshPage{
+        	color: $success-color;
+        }
+        .line {
+            display: block;
+            float: left;
+            width: 78.6px;
+            height: 7px;
+            border-bottom: 2px solid $fail-color;
+            padding-bottom: 7px;
+        }
+         .finshline{
+        	display: block;
+            float: left;
+            width: 78.6px;
+            height: 7px;
+            border-bottom: 2px solid $success-color;
+            padding-bottom: 7px;
+        }
+    }
+  
+}
